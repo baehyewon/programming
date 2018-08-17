@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.example.inniiis.hangang.MainActivity">
+
+    <EditText
+        android:id="@+id/loginid"
+        android:hint="ID"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:backgroundTint="#29aba3"
+        android:layout_above="@+id/loginpw"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/loginpw"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#29aba3"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/loginid"
+        android:layout_alignStart="@+id/loginid"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:onClick="btregister"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/nologin"
+        android:layout_toStartOf="@+id/nologin" />
+
+    <Button
+        android:id="@+id/nologin"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:onClick="btnologin"
+        android:background="@null"
+        android:layout_below="@+id/login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="btlogin"
+        android:background="@null"
+        android:layout_above="@+id/register"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

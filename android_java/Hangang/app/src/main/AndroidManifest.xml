@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.inniiis.hangang">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name = ".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListActivity"/>
+        <activity android:name=".List2Activity"/>
+        <activity android:name=".WebviewActivity"/>
+        <activity android:name=".RealmainActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".InfoActivity"/>
+        <activity android:name=".DtinfoActivity"/>
+        <activity android:name=".NoticeActivity"/>
+        <activity android:name=".NoticedetailActivity"/>
+        <activity android:name=".Mypage2Activity"/>
+        <activity android:name=".ReservActivity"/>
+        <activity android:name=".Reserv1Activity"/>
+        <activity android:name=".Reserv2Activity"/>
+        <activity android:name=".ReservokActivity"/>
+        <activity android:name=".PictureActivity"/>
+        <activity android:name=".Picture2Activity"/>
+        <activity android:name=".Picture3Activity"/>
+        <activity android:name=".S1Activity"/>
+        <activity android:name=".S2Activity"/>
+        <activity android:name=".S3Activity"/>
+        <activity android:name=".S4Activity"/>
+        <activity android:name=".S5Activity"/>
+        <activity android:name=".S6Activity"/>
+        <activity android:name=".S7Activity"/>
+        <activity android:name=".S8Activity"/>
+        <activity android:name=".S9Activity"/>
+        <activity android:name=".S10Activity"/>
+        <activity android:name=".S11Activity"/>
+        <activity android:name=".PopupActivity" android:theme="@style/Theme.MyDialog"/>
+    </application>
+
+</manifest>

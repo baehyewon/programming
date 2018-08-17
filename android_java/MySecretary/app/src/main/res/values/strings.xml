@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">나만의 비서</string>
+    <string name="title_star">중요</string>
+    <string name="title_fast">긴급</string>
+    <string name="title_today">오늘</string>
+    <string name="title_seach">찾기</string>
+</resources>

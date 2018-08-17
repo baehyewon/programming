@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="#40b2d7"
+            >
+            <TextView
+                android:id="@+id/am_txt_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/am_btn_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_click" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <!--
+            <Button
+                android:id="@+id/am_btn_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="로그아웃"
+                android:textColor="#ffffff"
+                />
+                -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_weight="15"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:id="@+id/main_search"/>
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search"
+                android:id="@+id/btn_search"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/am_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d1d1d1" />
+                <ListView
+                    android:id="@+id/am_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:fadeScrollbars="false"
+                    >
+                </ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

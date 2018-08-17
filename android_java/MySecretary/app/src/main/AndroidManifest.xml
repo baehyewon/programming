@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.taste">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--     * SMS 전송 권한 추가 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".MonitorActivity" />
+        <activity android:name=".AddFriendActivity"></activity>
+        <activity android:name=".MoV.MainActivity" />
+        <activity android:name=".MoV.Main2Activity" />
+        <activity android:name=".MoV.Main3Activity" />
+        <activity android:name=".MoV.Main4Activity" />
+        <activity android:name=".MoV.Main55Activity" />
+        <activity android:name=".MoV.Main66Activity" />
+        <activity android:name=".MoV.Main77Activity" />
+        <activity android:name=".MoV.Main88Activity" />
+        <activity
+            android:name=".dial.AlarmActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".dial.AlarmActivity_2"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".dial.DirectSmsActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".ContactListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CaldroidSampleActivity" />
+        <activity android:name=".RecommendListActivity"></activity>
+        <activity android:name=".KakaoSignupActivity"></activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="e73a594dcfc3ba4823c714f96fdad9d4" />
+
+    </application>
+
+</manifest>

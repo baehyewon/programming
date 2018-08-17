@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context="com.example.inniiis.hangang.MainActivity">
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29aba3"
+        android:hint="ID"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29aba3"
+        android:hint="이름"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/id"
+        android:layout_alignStart="@+id/id" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29aba3"
+        android:hint="비밀번호"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_marginBottom="227dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="150dp"
+        android:hint="비밀번호 확인"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29aba3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29aba3"
+        android:hint="연락처"
+        android:textColor="#29aba3"
+        android:textColorHint="#29aba3"
+        android:layout_below="@+id/password2"
+        android:layout_alignStart="@+id/password2" />
+
+    <Button
+        android:id="@+id/register"
+        android:onClick="btregister"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/phone"
+        android:background="@null"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/back"
+        android:onClick="btback"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:background="@null"
+        android:layout_alignBottom="@+id/register"
+        android:layout_toRightOf="@+id/register"
+        android:layout_toEndOf="@+id/register"
+        android:layout_alignTop="@+id/register" />
+</RelativeLayout>

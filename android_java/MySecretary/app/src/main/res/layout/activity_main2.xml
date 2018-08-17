@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="#40b2d7"
+            >
+            <TextView
+                android:id="@+id/am_txt_result"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <!--
+            <Button
+                android:id="@+id/am_btn_logout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="로그아웃"
+                android:textColor="#ffffff"
+                />
+                -->
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/am2_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ListView
+                    android:id="@+id/am2_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:fadeScrollbars="false"
+                    >
+                </ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

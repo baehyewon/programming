@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@drawable/monitor"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mo_btn_all"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#00ff0000" />
+
+            <Button
+                android:id="@+id/mo_btn_process"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#00ff0000" />
+
+            <Button
+                android:id="@+id/mo_btn_delay"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#00ff0000" />
+
+            <Button
+                android:id="@+id/mo_btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#00ff0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mo_important"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/star" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="중요업무"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mo_fast"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/thunder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="긴급업무"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mo_today"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/today" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="오늘업무"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mo_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/calendar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="달력보기"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <Button
+                android:id="@+id/mo_btn_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bottom" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
